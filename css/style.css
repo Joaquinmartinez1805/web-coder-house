@@ -1,0 +1,342 @@
+@media screen and (min-width: 1024px) {
+    
+
+@font-face {
+    font-family: 'ubuntu';
+    src: url('../resources/fonts/Ubuntu-LightItalic.ttf ');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'ubuntu';
+}
+.barra-navegacion{
+    background-color: #d8e2dc;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+.barra-navegacion .logo{
+    width: 450px;
+    height: 450px;
+    grid-column: 1/4;
+}
+.barra-navegacion .logo-superior{
+    grid-column: 7/8;
+    grid-row: 1;
+    width: 500px;
+    height: 300px;
+    align-items: flex-start;
+
+}
+.barra-navegacion .barra-lista{
+    display: flex;
+    justify-content:center;
+    grid-column: 6/8;
+    grid-row: 3/4;
+    
+}
+.barra-navegacion .barra-lista li{
+    list-style: none;
+    width: 30px;
+    height: 60px;
+    margin-left: 100px;
+
+}
+.barra-navegacion .barra-lista a{
+    text-decoration:none;
+    color: black;
+    cursor: pointer;
+    font-weight: 1000;
+    border-radius: 5px ;
+    border-color: #f8edeb;
+    background-color: #fae1dd;
+    padding: 2px 8px 2px 8px;
+    border-style: solid;
+}
+.barra-navegacion .menu-bar i{
+    display: none;
+}
+.principal{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    background-color: #d8e7de;
+
+}
+.principal .contenido {
+    align-items: center;
+    grid-column: 4/8;
+    margin-bottom: 50px;
+}
+.principal .contenido h2{
+    margin-top: 50px;
+}
+.principal .contenido a{
+    grid-column: 8;
+    text-decoration:none;
+    color: black;
+    cursor: pointer;
+    font-weight: 1000;
+    border-radius: 5px ;
+    border-color: #f8edeb;
+    background-color: #fae1dd;
+    padding: 2px 8px 2px 8px;
+    border-style: solid;
+}
+.principal .contenido p{
+    margin-bottom: 20px;
+}
+.pie-pagina{
+    background-color: #cdddd3;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.pie-pagina .contenido-pie  {
+    margin-top: 30px;
+    grid-column: 4/8;
+}
+.pie-pagina .contenido-pie .redes-sociales{
+    display: flex;
+    grid-row: 2/2;
+}
+.pie-pagina .contenido-pie .redes-sociales i{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.imagen-comentario{
+    width: 600px;
+    height: 130px;
+}
+}
+@media screen  and (max-width: 800px) and (min-width:577px){
+    @font-face {
+        font-family: 'ubuntu';
+        src: url('../resources/fonts/Ubuntu-LightItalic.ttf ');
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: 'ubuntu';
+    }
+    .barra-navegacion{
+        background-color: #d8e2dc;
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+    }
+    .barra-navegacion .logo{
+        width: 250px;
+        height:  250px;
+        grid-column: 1/4;
+    }
+    .barra-navegacion .logo-superior{
+        grid-column:5/8;
+        grid-row: 1;
+        width: 250px;
+        height: 125px;
+        align-items: flex-start;
+    
+    }
+    .barra-navegacion .barra-lista{
+        display: flex;
+        justify-content:flex-start;
+        grid-column: 1/8;
+        grid-row: 3/4;
+        
+    }
+    .barra-navegacion .barra-lista li{
+        list-style: none;
+        width: 10px;
+        height: 30px;
+        margin-left:10px;
+        margin-right: 100px;
+    
+    }
+    .barra-navegacion .barra-lista a{
+        text-decoration:none;
+        color: black;
+        cursor: pointer;
+        font-weight: 1000;
+        border-radius: 5px ;
+        border-color: #f8edeb;
+        background-color: #fae1dd;
+        padding: 2px 8px 2px 8px;
+        border-style: solid;
+    }
+    .barra-navegacion .menu-bar i{
+        display: none;
+    }
+    .principal{
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        background-color: #d8e7de;
+    
+    }
+    .principal .contenido {
+        align-items: center;
+        grid-column: 2/8;
+        margin-bottom: 50px;
+    }
+    .principal .contenido h2{
+        margin-top: 50px;
+    }
+    .principal .contenido a{
+        grid-column: 8;
+        text-decoration:none;
+        color: black;
+        cursor: pointer;
+        font-weight: 1000;
+        border-radius: 5px ;
+        border-color: #f8edeb;
+        background-color: #fae1dd;
+        padding: 2px 8px 2px 8px;
+        border-style: solid;
+    }
+    .principal .contenido p{
+        margin-bottom: 20px;
+    }
+    .pie-pagina{
+        background-color: #cdddd3;
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .pie-pagina .contenido-pie  {
+        margin-top: 30px;
+        grid-column: 2/8;
+    }
+    .pie-pagina .contenido-pie .redes-sociales{
+        display: flex;
+        grid-row: 2/2;
+    }
+    .pie-pagina .contenido-pie .redes-sociales i{
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    .imagen-comentario{
+        width: 500px;
+        height: 100px;
+    }
+
+}
+@media screen  and (max-width: 1023px) and (min-width:801px){
+
+    @font-face {
+        font-family: 'ubuntu';
+        src: url('../resources/fonts/Ubuntu-LightItalic.ttf ');
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: 'ubuntu';
+    }
+    .barra-navegacion{
+        background-color: #d8e2dc;
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+    }
+    .barra-navegacion .logo{
+        width: 350px;
+        height: 350px;
+        grid-column: 1/4;
+    }
+    .barra-navegacion .logo-superior{
+        grid-column: 7/8;
+        grid-row: 1;
+        width: 300px;
+        height: 250px;
+        align-items: flex-start;
+    
+    }
+    .barra-navegacion .barra-lista{
+        display: flex;
+        justify-content:start;
+        grid-column: 3/8;
+        grid-row: 3/4;
+        
+    }
+    .barra-navegacion .barra-lista li{
+        list-style: none;
+        width: 30px;
+        height: 60px;
+        margin-left: 10px;
+        margin-left: 90px;
+    
+    }
+    .barra-navegacion .barra-lista a{
+        text-decoration:none;
+        color: black;
+        cursor: pointer;
+        font-weight: 1000;
+        border-radius: 5px ;
+        border-color: #f8edeb;
+        background-color: #fae1dd;
+        padding: 2px 8px 2px 8px;
+        border-style: solid;
+    }
+    .barra-navegacion .menu-bar i{
+        display: none;
+    }
+    .principal{
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        background-color: #d8e7de;
+    
+    }
+    .principal .contenido {
+        align-items: center;
+        grid-column: 3/8;
+        margin-bottom: 50px;
+    }
+    .principal .contenido h2{
+        margin-top: 50px;
+    }
+    .principal .contenido a{
+        grid-column: 8;
+        text-decoration:none;
+        color: black;
+        cursor: pointer;
+        font-weight: 1000;
+        border-radius: 5px ;
+        border-color: #f8edeb;
+        background-color: #fae1dd;
+        padding: 2px 8px 2px 8px;
+        border-style: solid;
+    }
+    .principal .contenido p{
+        margin-bottom: 20px;
+    }
+    .pie-pagina{
+        background-color: #cdddd3;
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .pie-pagina .contenido-pie  {
+        margin-top: 30px;
+        grid-column: 4/8;
+    }
+    .pie-pagina .contenido-pie .redes-sociales{
+        display: flex;
+        grid-row: 2/2;
+    }
+    .pie-pagina .contenido-pie .redes-sociales i{
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    .imagen-comentario{
+        width: 550px;
+        height: 120px;
+    }
+
+
+
+}
