@@ -14,7 +14,7 @@ body{
     font-family: 'ubuntu';
 }
 .barra-navegacion{
-    background-color: #d8e2dc;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(97,186,255,1) 0%, rgba(166,239,253,1) 90.1% );
     display: grid;
     grid-template-columns: repeat(8,1fr);
 }
@@ -22,6 +22,9 @@ body{
     width: 450px;
     height: 450px;
     grid-column: 1/4;
+    animation-name: flash;
+    animation-duration: 5s;
+
 }
 .barra-navegacion .logo-superior{
     grid-column: 7/8;
@@ -29,6 +32,8 @@ body{
     width: 500px;
     height: 300px;
     align-items: flex-start;
+
+ 
 
 }
 .barra-navegacion .barra-lista{
@@ -43,7 +48,6 @@ body{
     width: 30px;
     height: 60px;
     margin-left: 100px;
-
 }
 .barra-navegacion .barra-lista a{
     text-decoration:none;
@@ -72,7 +76,9 @@ body{
 }
 .principal .contenido h2{
     margin-top: 50px;
+
 }
+
 .principal .contenido a{
     grid-column: 8;
     text-decoration:none;
@@ -109,7 +115,6 @@ body{
 .imagen-comentario{
     width: 600px;
     height: 130px;
-}
 }
 @media screen  and (max-width: 800px) and (min-width:577px){
     @font-face {
