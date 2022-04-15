@@ -116,6 +116,17 @@ body{
     width: 600px;
     height: 130px;
 }
+
+.main-socios{
+    background-color: #d8e7de;
+}
+.accordion-item{
+    background-color: #d8e7de;
+}
+.accordion-button{
+    background-color: #d8e7de;
+}
+
 @media screen  and (max-width: 800px) and (min-width:577px){
     @font-face {
         font-family: 'ubuntu';
@@ -341,7 +352,5 @@ body{
         width: 550px;
         height: 120px;
     }
-    
-
 
 }
