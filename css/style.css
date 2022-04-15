@@ -126,6 +126,16 @@ body{
 .accordion-button{
     background-color: #d8e7de;
 }
+.contenedor-carousel{
+    width: 500px;
+    height: 500px;
+    margin-left: 600px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+.main-productos{
+    background-color: #d8e7de;
+}
 
 @media screen  and (max-width: 800px) and (min-width:577px){
     @font-face {
