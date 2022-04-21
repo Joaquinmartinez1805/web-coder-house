@@ -136,8 +136,9 @@ body{
 .main-productos{
     background-color: #d8e7de;
 }
+}
 
-@media screen  and (max-width: 800px) and (min-width:577px){
+@media screen  and (max-width: 760px) and (min-width:541px){
     @font-face {
         font-family: 'ubuntu';
         src: url('../resources/fonts/Ubuntu-LightItalic.ttf ');
@@ -151,7 +152,7 @@ body{
         font-family: 'ubuntu';
     }
     .barra-navegacion{
-        background-color: #d8e2dc;
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(97,186,255,1) 0%, rgba(166,239,253,1) 90.1% );
         display: grid;
         grid-template-columns: repeat(8,1fr);
     }
@@ -159,6 +160,8 @@ body{
         width: 250px;
         height:  250px;
         grid-column: 1/4;
+        animation-name: flash;
+        animation-duration: 5s;
     }
     .barra-navegacion .logo-superior{
         grid-column:5/8;
@@ -250,7 +253,7 @@ body{
     }
 
 }
-@media screen  and (max-width: 1023px) and (min-width:801px){
+@media screen  and (max-width: 540px) and (min-width:320px){
 
     @font-face {
         font-family: 'ubuntu';
@@ -265,35 +268,33 @@ body{
         font-family: 'ubuntu';
     }
     .barra-navegacion{
-        background-color: #d8e2dc;
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(97,186,255,1) 0%, rgba(166,239,253,1) 90.1% );
         display: grid;
         grid-template-columns: repeat(8,1fr);
     }
     .barra-navegacion .logo{
-        width: 350px;
-        height: 350px;
+        width: 250px;
+        height: 200px;
         grid-column: 1/4;
+        animation-name: flash;
+        animation-duration: 5s;
     }
     .barra-navegacion .logo-superior{
-        grid-column: 7/8;
-        grid-row: 1;
-        width: 300px;
-        height: 250px;
-        align-items: flex-start;
+display: none
     
     }
     .barra-navegacion .barra-lista{
-        display: flex;
-        justify-content:start;
-        grid-column: 3/8;
+        display: ;
+
+
+        grid-column: 1/8;
         grid-row: 3/4;
         
     }
     .barra-navegacion .barra-lista li{
         list-style: none;
-        width: 30px;
-        height: 60px;
-        margin-left: 10px;
+        width: 10px;
+        height: 30px;
         margin-left: 90px;
     
     }
